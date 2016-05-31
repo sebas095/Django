@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.css">
+    <style>
+      body {
+        background-color: #EFEBE9;
+      }
+
+      .content {
+        background-color: #FFF;
+      }
+
+      a:link {
+        color: #42413C;
+        text-decoration: underline;
+      }
+
+      a:visited {
+        color: #6E6C64;
+        text-decoration: underline;
+      }
+
+      a:hover, a:active, a:focus {
+        text-decoration: none;
+      }
+
+      .header {
+        background-color: #9CCC65;
+      }
+
+      .footer {
+        padding: 10px 0;
+        background-color: #A1887F;
+      }
+
+      .fltrt {
+        float: right;
+        margin-left: 0px;
+      }
+
+      .fltlft {
+        float: left;
+        margin-left: 0px;
+        height: 960px;
+      }
+
+      .clearfloat {
+        clear: both;
+        height: 0;
+        font-size: 1px;
+        line-height: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col l12">
+          <div class="header">
+            <a href="#">
+              <img src="" alt="Logo" width="180" height="90" style="background-color: #C5E1A5; display: block;">
+            </a>
+          </div>
+          <div class="content">
+            <form id="form" action="/codigofacilito/blog/contact/" method="post">{% csrf_token %}
+              {{form.as_p}}
+              <input type="submit" value="Submit"/>
+            </form>
+          </div>
+          <div class="footer">
+            CF
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

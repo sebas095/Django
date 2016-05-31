@@ -1,0 +1,4 @@
+codigofacilito/*.pyc
+codigofacilito/*/*.pyc
+codigofacilito/*.sqlite3
+codigofacilito/*/media
